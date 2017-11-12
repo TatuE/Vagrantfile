@@ -9,8 +9,8 @@ Vagrant.configure(2) do |config|
  config.vm.provision "shell", inline: $tscript
 
 	(1..3).each do |i|
-		config.vm.define "slave-#{i}" do |slave-#{i}|
-  	 	slave-#{i}.vm.hostname = "slave-#{i}"
+		config.vm.define "slave-#{i}" do |slave-"#{i}"|
+  	 	slave-"#{i}".vm.hostname = "slave-#{i}"
  		end
 
  	end
