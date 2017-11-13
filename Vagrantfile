@@ -9,6 +9,7 @@ TSCRIPT
 
 Vagrant.configure(2) do |config|
 config.vm.box = "bento/ubuntu-16.04"
+config.vm.boot_timeout = 900    
 config.vm.provision "shell", inline: $tscript        
 
         (1..3).each do |i|
