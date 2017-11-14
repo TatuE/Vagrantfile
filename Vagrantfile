@@ -1,4 +1,5 @@
-# modified from a script made by Tero Karvinen http://terokarvinen.com
+# modified from a script made by Tero Karvinen 
+# http://terokarvinen.com/2017/provision-multiple-virtual-puppet-slaves-with-vagrant
 
 
 $tscript = <<TSCRIPT
