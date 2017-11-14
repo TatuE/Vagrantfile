@@ -9,7 +9,7 @@ bash puppetSlaver.sh
 TSCRIPT
 
 Vagrant.configure(2) do |config|
-config.vm.box = "minimal/xenial64"
+config.vm.box = "minimal/trusty64"
 config.vm.boot_timeout = 900    
 config.vm.provision "shell", inline: $tscript        
 
