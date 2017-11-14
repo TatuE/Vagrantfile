@@ -3,7 +3,7 @@
 
 
 $tscript = <<TSCRIPT
-echo "46.101.196.129 pmaster.erkinjuntti.me pmaster" |sudo tee --append /etc/hosts
+echo "46.101.196.129 pmaster" |sudo tee --append /etc/hosts
 wget https://raw.githubusercontent.com/TatuE/puppetInstaller/master/puppetSlaver.sh
 bash puppetSlaver.sh
 TSCRIPT
