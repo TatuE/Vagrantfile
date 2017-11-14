@@ -14,9 +14,9 @@ config.vm.boot_timeout = 900
 config.vm.provision "shell", inline: $tscript        
 
         (1..3).each do |i|
-                slave = "slave#{i}"
+                slave = "slaveA#{i}"
                 config.vm.define slave do |slave|
-                slave.vm.hostname = "slave#{i}"
+                slave.vm.hostname = "slaveA#{i}"
                 slave.vm.network :forwarded_port, guest: 22, host: 62000+i, id: 'ssh'
                 end
         end
