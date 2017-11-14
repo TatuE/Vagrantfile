@@ -17,7 +17,7 @@ config.vm.provision "shell", inline: $tscript
                 slave = "slave#{i}"
                 config.vm.define slave do |slave|
                 slave.vm.hostname = "slave#{i}"
-                slave.vm.network :forwarded_port, guest: 22, host: 50000+i, id: 'ssh'
+                slave.vm.network :forwarded_port, guest: 22, host: 62000+i, id: 'ssh'
                 end
         end
 end
