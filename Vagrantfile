@@ -18,6 +18,10 @@ config.vm.provision "shell", inline: $tscript
                 config.vm.define slave do |slave|
                 slave.vm.hostname = "slaveA#{i}"
                 slave.vm.network :forwarded_port, guest: 22, host: 62000+i, id: 'ssh'
+                        
+                slave.vm.provider "virtualbox" do |v|
+                        v.linked_clone = true
+                end        
                 end
         end
 end
