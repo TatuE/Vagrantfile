@@ -13,7 +13,7 @@ config.vm.box = "bento/ubuntu-16.04"
 config.vm.boot_timeout = 900    
 config.vm.provision "shell", inline: $tscript        
 
-        (1..3).2ach do |i|
+        (1..3).each do |i|
                 slave = "slaveA#{i}"
                 config.vm.define slave do |slave|
                 slave.vm.hostname = "slaveA#{i}"
